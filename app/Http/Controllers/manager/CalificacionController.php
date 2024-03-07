@@ -9,7 +9,7 @@ use App\Models\manager\Calificaciones;             // Modelo
 
 class CalificacionController extends Controller{
 
-    /* Ingresa una nueva descripcion. */
+    /* Ingresa una nueva descripcion.      */
     public function NuevaCalificacion (Request $request) {
 
         // Verifico que no exista la descripcion.
