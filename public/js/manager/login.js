@@ -9,7 +9,7 @@ async function Login () {
     data1 = await respuesta.text();
     data2 = JSON.parse(data1);
 
-        /* Si al invocar la funcion de la Api, no retorna error Statusd = 200, se pregunta por el valor del dato resultado  */
+        /* Si al invocar la funcion de la Api, no retorna error Status = 200, se pregunta por el valor del dato resultado  */
         if (respuesta.status == 200) {
 
             /*  Si al invocar a la funcion de la Api, se retorna un valor, se analiza cual es el resultado */
