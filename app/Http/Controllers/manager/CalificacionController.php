@@ -5,9 +5,9 @@ namespace App\Http\Controllers\manager;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 use DB;
-use App\Models\manager\Calificaciones;                       // Modelo
+use App\Models\manager\Calificaciones;             // Modelo
 
-class CalificacionController extends Controller{
+class CalificacionController extends Controller {
 
     /* Ingresa una nueva descripcion. */
     public function NuevaCalificacion (Request $request) {
