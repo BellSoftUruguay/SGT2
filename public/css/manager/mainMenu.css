@@ -1,0 +1,68 @@
+/* Fondo de pantalla */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Barra de menu */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #598df3;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropdown-btn {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* opcion del menu de nivel 1 */
+li a:hover, .dropdown:hover .dropdown-btn {
+    background-color: #FFA500;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+a.dropdown:after {
+	content: "\25BE";
+	margin-left: 5px;
+}
+
+/* dorpdown que contiene al segundo nivel del menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #598df3;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    z-index: 90;
+}
+
+.dropdown-content a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* opcion del submenu */
+.dropdown-content a:hover {
+    background-color: #FFA500
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

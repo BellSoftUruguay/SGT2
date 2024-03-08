@@ -1,0 +1,39 @@
+/******************** FONDO DE LA VENTANA ********************/
+.bodyAbout{
+    background-image: url("../imagenes/Fondos/Fondo2.jpg");
+    overflow: hidden;
+
+    /* Fijar la imagen de fondo este vertical y horizontalmente y centrado */
+    background-position: center ;
+
+    /* Esta imagen no debe de repetirse */
+    background-repeat: no-repeat;
+
+    /* La imagen ocupa el 100% y se reescala */
+    background-size: cover;
+
+    width: 100%;
+    height: 90vh;
+ }
+
+/******************** TEXTO ABOUT ********************/
+.about {
+    /* Distancia del titulo al texto
+     Arriba, Derecha, Abajo, Izquierda */
+    padding: 0% 25% 5% 25%;
+
+    /* Color de la letra */
+    color: #ffffff;
+
+    /* Tamaño de la letra */
+    font-size: 150%;
+    margin-top: 10%;
+    margin-left: 0%;
+}
+
+.img-Nocopiar {
+    width: 20%;
+    margin-left: 35% ;
+    border-radius: 5%;
+}
+

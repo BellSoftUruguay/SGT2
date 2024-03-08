@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../css/manager/estados.css">
+    </head>
+
+    <body>
+        <div class="estado-titulo"><span>Mantenimiento de estados </span></div>
+
+        <div class="estado-container">
+
+<!--            <h2>Iniciar Sesión</h2> -->
+
+<!--            <img src='../imagenes/Usuarios.png' alt="Usuario" class="imagen">   -->
+
+            <form id="estado-form">
+                <div class="TablaEstado">
+                    <div class="DatosEstado">
+
+                        <!-- Datos recuperados de la DB -->
+                        <table class="TablaDatosEstado" border="1">
+
+                            <!-- Cabezal de las columnas -->
+                            <thead id="thead-Estados">
+                                <tr>
+                                    <th>Estados</th>
+                                </tr>
+                            </thead>
+
+                            <!-- Detalle de la columna -->
+                            <tbody id="columna">
+                                <tr v-for="(registro, index) in this.listaEstados" :key="index" @click="selectRow(registro.id, registro.estado)">
+                                    <td class="registro_estado">{{ registro.estado }}</td>
+                                </tr>
+                            </tbody>
+                        </table> <!-- TablaDatosEstado -->
+                    </div> <!-- DatosEstado -->
+
+                    <!-- Estado -->
+                    <div class="CampoEstado">
+                        <input id="inputEstado" class="Estado" type="text" placeholder="Ingrese el Estado..." required v-model="form.campoEstado" title="Descripción del estado." >
+                    </div>
+                </div> <!-- TablaEstado -->
+
+            </form>
+        </div>
+        <script src="../js/manager/login.js"></script>
+    </body>
+
+</html>

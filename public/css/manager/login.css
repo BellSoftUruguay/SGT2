@@ -1,0 +1,101 @@
+/* Fondo de pantalla */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9d185;
+}
+
+/* TAMAÑO CAJON TITULO*/
+.titulo-login {
+    margin: auto;
+    margin-top: 2vh;
+    background: #598df3;               /* Color de fondo */
+
+    /* TEXTO */
+    color: #ffffff;                       /* Color de la letra */
+    font-size: 50px;                        /* Tamaño de la letra */
+    font-weight: 600;                       /* Grosor del texto */
+    text-align: center;
+    padding: 1%;
+}
+
+/* Contenedor del login */
+.login-container {
+    background-color: #598cf367;
+    height: 100%;                   /* largo */
+    width: 250px;                   /* ancho */
+    margin: 100px auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #000000;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Imagen */
+.login-imagen {
+/*    margin: 1%;
+    padding-left: 43%;
+    width: 15%;*/
+    width: 50%;
+    margin-left: 20%;
+}
+
+/* formato del ingreso de datos y el boton. */
+.usuario,
+.password,
+.boton {
+    height: 5%;         /* Alto */
+    width: 80%;
+    margin: 0% 10% 0% 10%;
+
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 3px solid;
+    border-color: #598df3;
+
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+.boton {
+    background-color: #598df3;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Al pasar por encima del boton. */
+.boton:hover {
+    background-color: #0056b3;
+    color: #FFA500;
+}
+
+/* Color del texto explicativo de las celdas */
+.usuario::placeholder,  .password::placeholder {
+    color: #00000086;
+    font-style: italic;
+    font-size: 13px;
+}
+
+/* Animacion de Zoom de inicio de pantalla */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
