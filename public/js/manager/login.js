@@ -1,30 +1,31 @@
-async function Login() {
+async function Login () {
 
     respuesta = await fetch('http://127.0.0.1:8000/api/Login', {
         method: 'POST',
-        body: JSON.stringify({ 'usuario': document.getElementById('usuario').value, 'password': document.getElementById('password').value }),
+        body: JSON.stringify({'usuario':document.getElementById('usuario').value, 'password':document.getElementById('password').value}),
         headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
     });
 
     data1 = await respuesta.text();
     data2 = JSON.parse(data1);
 
-    /* Si al invocar la funcion de la Api, no retorna error Status = 200, se pregunta por el valor del dato resultado  */
+
+alert(respuesta.status);
+
+    /* Si al invocar la funcion de la Api, no retorna error Statusd = 200, se pregunta por el valor del dato resultado  */
     if (respuesta.status == 200) {
 
         /*  Si al invocar a la funcion de la Api, se retorna un valor, se analiza cual es el resultado */
         if (data2.resultado == 200) {
-
-            alert(data2.objUsuario.usuario);
 
             /* Login existoso*/
             localStorage.setItem('usuario', data2.objUsuario.usuario);
 
             /* Segun la categoria del usuario, abre un menu u otro. */
             if (data2.objUsuario.categoriaUsuario == 9) {
-                window.open("C:/xampp/htdocs/SGT2/public/pages/manager/mainMenu.html", "_self");          // Manager - supervisor
+                window.open("C:/xampp/htdocs/SGT/public/pages/manager/mainMenu.html", "_self");          // Manager - supervisor
             } else {
-                window.open("C:/xampp/htdocs/SGT2/public/pages/manager/mainMenu.html", "_self");         // Usuario final.
+                window.open("C:/xampp/htdocs/SGT/public/pages/manager/mainMenu.html", "_self");         // Usuario final.
             }
 
         } else {
