@@ -8,39 +8,33 @@ use Validator;
 use Exception;
 use DB;
 use Illuminate\Support\Facades\Hash;
-use App\Models\Usuario;
+//use App\Models\Usuario;
 
 class UsuarioController extends Controller {
 
     /* LOGIN */
     public function Login (Request $request) {
 
-//        return response ()->json(['resultado' => Response::HTTP_OK]);
-
         /* Validaciones */
         $validator  = Validator::make($request->all(), ['usuario' => 'required' ]);
         if ($validator->fails()) {
-            //return response ()->json(['resultado' =>  Response::HTTP_BAD_REQUEST]);
-            return response ()->json(['resultado' =>  Response::HTTP_CONFLICT]);
+            return response ()->json(['resultado' =>  Response::HTTP_BAD_REQUEST]);
         }
 
         $validator  = Validator::make($request->all(), ['password' => 'required' ]);
         if ($validator->fails()) {
-            return response ()->json(['resultado' =>  Response::HTTP_ALREADY_REPORTED]);
-            //return response ()->json(['resultado' =>  Response::HTTP_BAD_REQUEST]);
+            return response ()->json(['resultado' =>  Response::HTTP_BAD_REQUEST]);
         }
 
         try {
-            if (conexionBD()) {
-                return response ()->json(['resultado' => Response::HTTP_FAILED_DEPENDENCY]);
-            }
-            return response ()->json(['resultado' => Response::HTTP_BAD_GATEWAY]);
 
-            $usuario = DB::table('usuarios')->where('usuario', $request->usuario)->first();
+            $usuario = DB::select('select * from usuarios where usuario = ?', [$request->usuario]);
+
+//            $usuario = DB::table('usuarios')->where('usuario', $request->usuario)->first();
 
             if ($usuario)  {    // Si se encontro un usuario
-
-                if (Hash::check($request->password, $usuario->password)){   // Si la passwrod es correcta
+//(Hash::check($request->password, $usuario->password)){   // Si la passwrod es correcta
+                if ($request->password== $usuario->password){   // Si la passwrod es correcta
                     return response ()->json(['resultado' => Response::HTTP_OK, 'objUsuario'=>$usuario]);
                 }
             }
@@ -52,7 +46,7 @@ class UsuarioController extends Controller {
     }
 
     /* USUARIO NUEVO */
-    public function nuevoUsuario (Request $request) {
+    public function NuevoUsuario (Request $request) {
 
         // Verifico que no exista el usuario.
         $usuario = Usuarios::find($request->usuario);
@@ -155,16 +149,5 @@ class UsuarioController extends Controller {
         // Retorna el resultado.
         return response ()->json(['resultado' =>  Response::HTTP_OK]);
 
-    }
-
-    public function conexionBD() {
-
-        $link = mysql_connect('127.0.0.1:3306', 'usuario', 'usuario');
-
-        if ($link){
-            return true;
-        } else {
-            return false;
-        }
     }
 }
