@@ -15,7 +15,7 @@ async function Login() {
         /*  Si al invocar a la funcion de la Api, se retorna un valor, se analiza cual es el resultado */
         if (data2.resultado == 200) {
 
-            alert(data2.objUsuario.usuario);
+        //    alert(data2.objUsuario.usuario);
 
             /* Login existoso*/
             localStorage.setItem('usuario', data2.objUsuario.usuario);
