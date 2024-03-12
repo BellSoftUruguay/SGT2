@@ -30,8 +30,8 @@ class UsuarioController extends Controller {
 
             if ($usuario)  {    // Si se encontro un usuario
 
-    //           if (Hash::check($request->password, $usuario->password)) {   // Si la passwrod es correcta
-                if ($request->password== $usuario->password){   // Si la passwrod es correcta
+               if (Hash::check($request->password, $usuario->password)) {   // Si la passwrod es correcta
+    //            if ($request->password== $usuario->password){   // Si la passwrod es correcta
                     return response ()->json(['resultado' => Response::HTTP_OK, 'objUsuario'=>$usuario]);
                 }
             }
@@ -104,7 +104,7 @@ class UsuarioController extends Controller {
                 'email' => $request->email,
                 'habilitado' => $request->habilitado,
                 'seguridad' => $request->seguridad,
-                'categoriaUsuario' => $request->CategoriUsuario
+                'categoriaUsuario' => $request->categoriaUsuario
             ]);
 
             return response ()->json(['resultado' =>  Response::HTTP_OK]);
@@ -127,7 +127,7 @@ class UsuarioController extends Controller {
                 'email' => $request->email,
                 'habilitado' => $request->habilitado,
                 'seguridad' => $request->seguridad,
-                'categoriaUsuario' => $request->CategoriUsuario
+                'categoriaUsuario' => $request->categoriaUsuario
             ]);
 
             // Retorna el resultado.

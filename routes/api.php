@@ -8,6 +8,7 @@ use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\manager\SectorController;
 use App\Http\Controllers\manager\CalificacionController;
 use App\Http\Controllers\manager\CategoriaUsuarioController;
+use App\Http\Controllers\manager\TicketController;
 
 /*
 |--------------------------------------------------------------------------
@@ -58,8 +59,8 @@ Route::get('/ObtenerCalificaciones', [CalificacionController::class, 'ObtenerCal
 
 /* TICKETS */
 Route::post('/NuevoTicket', [TicketController::class, 'NuevoTicket']);
-Route::post('/BorroTicket', [SectorController::class, 'BorroTicket']);
-Route::post('/ModificoTicket', [SectorController::class, 'ModificoTicket']);
+Route::post('/BorroTicket', [TicketController::class, 'BorroTicket']);
+Route::post('/ModificoTicket', [TicketController::class, 'ModificoTicket']);
 Route::get('/ObtenerTickets', [TicketController::class, 'ObtenerTickets']);
 
 /* TIPOS DE TICKETS */
@@ -73,6 +74,3 @@ Route::post('/NuevaCategoriaUsuario', [CategoriaUsuarioController::class, 'Nueva
 Route::post('/BorroCategoriaUsuario', [CategoriaUsuarioController::class, 'BorroCategoriaUsuario']);
 Route::post('/ModificoCategoriaUsuario', [CategoriaUsuarioController::class, 'ModificoCategoriaUsuario']);
 Route::get('/ObtenerCategoriasUsuarios', [CategoriaUsuarioController::class, 'ObtenerCategoriasUsuarios']);
-
-/* ABOUT*/
-Route::post('/About', [AboutController::class, 'About']);
