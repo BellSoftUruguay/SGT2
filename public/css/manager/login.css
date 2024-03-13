@@ -127,13 +127,18 @@ h2 {
     margin: 0%;
     margin-bottom: 0vh;
     background: #598df3;               /* Color de fondo */
-
+    width: 99%;
+/*
+    border-style: solid;
+    border-color: #faf602;
+*/
     /* TEXTO */
     color: #ffffff;                       /* Color de la letra */
-    font-size: 10px;                        /* Tamaño de la letra */
-    text-align: center;
+    font-size: 12px;                        /* Tamaño de la letra */
+/*    text-align: center;*/
     padding: 0.5%;
 }
+
 
 /* Animacion de Zoom de inicio de pantalla */
 .animate {
