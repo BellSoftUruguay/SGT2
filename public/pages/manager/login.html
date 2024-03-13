@@ -32,33 +32,38 @@
         <!-- Ejecuta la animacion de pantalla (zoom) -->
         <div class="modal-content animate">
 
-        <div class="titulo-login"><span> Ingreso al S.G.T. </span></div>
+            <div class="titulo-login"><span> Ingreso al S.G.T. </span></div>
 
-        <div class="login-container">
+            <div class="login-container">
 
-            <h2>Iniciar Sesión</h2>
+                <h2>Iniciar Sesión</h2>
 
-            <img src='../../imagenes/Usuarios.png' alt="Usuario" class="login-imagen">
+                <img src='../../imagenes/Usuarios.png' alt="Usuario" class="login-imagen"/>
 
+                <!-- USUARIO -->
                 <div class="ingresoDatos">
-                    <!-- USUARIO -->
                     <input type="text" id="usuario" class="usuario" placeholder="Nombre de usuario" required>
                 </div>
 
+                <!-- CONTRASEÑA -->
                 <div class="ingresoDatos">
-                    <!-- CONTRASEÑA -->
                     <input type="password" id="password" class="password" placeholder="Contraseña" required>
+<!--                    <span>Ver</span>    -->
+<!--                    <span>  -->
+                    <span id="icono" onclick="cambioIcono('PSW')">
+                        <img src='../../imagenes/Candado cerrado.jpg' alt="Candado" class="candado"/>
+                    </span>
                 </div>
 
                 <!-- BOTON INGRESAR -->
                 <div>
                     <button type="submit" class="boton" onclick="Login()"> Ingresar </button>
                 </div>
+            </div>
         </div>
 
-    </div>
+        <script src="../../js/manager/login.js"></script>
     </body>
-
 </html>
 
-<script src="../../js/manager/login.js"></script>
+
