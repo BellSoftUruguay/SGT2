@@ -57,7 +57,7 @@ class UsuarioController extends Controller {
             $validator  = Validator::make($request->all(), ['usuario' => 'required|min:4|max:20' ]);
             if ($validator->fails()) {
                 return response ()->json(['resultado' =>  Response::HTTP_BAD_REQUEST,
-                'mensaje' =>'El usuario no puede estar en blanco.']);
+                'mensaje' =>'El usuario no puede estar en blanco. Mínimo 4 caracteres.']);
             }
 
             // Controla que el USUARIO sea unico.
@@ -71,21 +71,21 @@ class UsuarioController extends Controller {
             $validator  = Validator::make($request->all(), ['nombre' => 'required|min:4|max:30' ]);
             if ($validator->fails()) {
                 return response ()->json(['resultado' =>  Response::HTTP_BAD_REQUEST,
-                'mensaje' =>'El nombre no puede estar en blanco.']);
+                'mensaje' =>'El nombre no puede estar en blanco. Mínimo 4 caracteres.']);
             }
 
             // Controla que el APELLIDO no sea blanco.
             $validator  = Validator::make($request->all(), ['apellido' => 'required|min:4|max:50' ]);
             if ($validator->fails()) {
                 return response ()->json(['resultado' =>  Response::HTTP_BAD_REQUEST,
-                'mensaje' =>'El apellido no puede estar en blanco.']);
+                'mensaje' =>'El apellido no puede estar en blanco. Mínimo 4 caracteres.']);
             }
 
             // Controla que la contraseña no puede estar en blanco.
             $validator  = Validator::make($request->all(), ['password' => 'required|min:6|max:80' ]);
             if ($validator->fails()) {
                 return response ()->json(['resultado' =>  Response::HTTP_BAD_REQUEST,
-                'mensaje' =>'La password no puede estar en blanco y debe tener como mínimo 6 caracteres.']);
+                'mensaje' =>'La password no puede estar en blanco. Mínimo 6 caracteres.']);
             }
 
             // Controla que el EMAIL no este en blanco.

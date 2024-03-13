@@ -46,36 +46,18 @@ async function Login() {
     }
 }
 
-document.querySelector('.ingresoDatos span').addEventListener('click', e => {
-
-    const passwordInput = document.querySelector('#password');
-
-    if (e.target.classList.contains('show')) {
-        e.target.classList.remove('show');
-        e.target.textContent = 'Ocultar';
-        passwordInput.type = 'text';
-    } else {
-        e.target.classList.add('show');
-        e.target.textContent = 'Ver';
-        passwordInput.type = 'password';
-    }
-});
-
 function cambioIcono(param) {
 
     const elementoID = document.getElementById("password");
-    const icono = document.getElementById("icono");
+    const imagenIcono = document.getElementById("imagen");
 
-    alert (elementoID.type);
-    alert(param);
-
-    if (elementoID.type === "password") {
-        elementoID.type = "text"; // Mostrar la contraseña
-       // icono.textContent = "👁️"; // Cambiar el ícono a ojo abierto
-        icono.textContent = '../../imagenes/Candado abierto.jpg';
-    } else {
-        elementoID.type = "password"; // Ocultar la contraseña
-        icono.textContent = "👁️"; // Cambiar el ícono a ojo cerrado
-        icono.textContent = '../../imagenes/Candado cerrado.jpg';
+    if (param='PSW'){
+        if (elementoID.type === "password") {
+            elementoID.type = "text";       // Mostrar la contraseña
+            imagenIcono.src= '../../imagenes/Candado abierto.png';
+        } else {
+            elementoID.type = "password";   // Ocultar la contraseña
+            imagenIcono.src= '../../imagenes/Candado cerrado.png';
+        }
     }
 }

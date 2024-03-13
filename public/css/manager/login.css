@@ -9,7 +9,7 @@ body {
 /* TAMAÑO CAJON TITULO*/
 .titulo-login {
     margin: auto;
-    margin-top: 2vh;
+    margin-top: 0vh;
     background: #598df3;               /* Color de fondo */
 
     /* TEXTO */
@@ -17,7 +17,7 @@ body {
     font-size: 50px;                        /* Tamaño de la letra */
     font-weight: 600;                       /* Grosor del texto */
     text-align: center;
-    padding: 1%;
+    padding: 0.5%;
 }
 
 /* Contenedor del login */
@@ -92,11 +92,47 @@ h2 {
 .ingresoDatos span {
     position: absolute;
     right: 30px;
-    top: 15px;
+    top: 5px;
     text-transform: uppercase;
     cursor: pointer;
     background-color: #0057b300;    /* transparente */
     color: #0056b3;
+}
+
+/* Rota el icono del candado */
+.candado {
+    text-align: center;
+
+    transition:
+    width 2s,
+    height 2s,
+    rotate 2s;
+}
+
+.candado:hover {
+    rotate: 360deg;
+}
+/*  Zoom a la imagen del login.
+.login-imagen {
+    width: 100px;
+    transition: width 2s;
+}
+
+.login-imagen:hover {
+    width: 150px;
+}
+*/
+
+.pie-login {
+    margin: 0%;
+    margin-bottom: 0vh;
+    background: #598df3;               /* Color de fondo */
+
+    /* TEXTO */
+    color: #ffffff;                       /* Color de la letra */
+    font-size: 10px;                        /* Tamaño de la letra */
+    text-align: center;
+    padding: 0.5%;
 }
 
 /* Animacion de Zoom de inicio de pantalla */

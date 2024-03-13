@@ -48,10 +48,10 @@
                 <!-- CONTRASEÑA -->
                 <div class="ingresoDatos">
                     <input type="password" id="password" class="password" placeholder="Contraseña" required>
-<!--                    <span>Ver</span>    -->
-<!--                    <span>  -->
+
+                    <!-- Agrego icono al input -->
                     <span id="icono" onclick="cambioIcono('PSW')">
-                        <img src='../../imagenes/Candado cerrado.jpg' alt="Candado" class="candado"/>
+                        <img src='../../imagenes/Candado cerrado.png' alt="Candado" class="candado" id="imagen"/>
                     </span>
                 </div>
 
@@ -59,6 +59,9 @@
                 <div>
                     <button type="submit" class="boton" onclick="Login()"> Ingresar </button>
                 </div>
+            </div>
+            <div>
+                <span id="pie-login" class="pie-login"> Bellsoft Uruguay ®</span>
             </div>
         </div>
 
