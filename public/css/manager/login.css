@@ -2,14 +2,15 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f9d185;
+
 }
 
 /* TAMAÑO CAJON TITULO*/
 .titulo-login {
-    margin: auto;
-    margin-top: 0vh;
+    margin: 0;
+    padding: 0;
+    min-height: 8vh;
+    max-height: 8vh;
     background: #598df3;               /* Color de fondo */
 
     /* TEXTO */
@@ -17,23 +18,39 @@ body {
     font-size: 50px;                        /* Tamaño de la letra */
     font-weight: 600;                       /* Grosor del texto */
     text-align: center;
-    padding: 0.5%;
+
+}
+.modal-content{
+    margin: 0;
+    padding: 0;
+    min-height: 95vh;                   /* largo */
+    max-height: 95vh;
+}
+
+.aaa {
+    margin: 0;
+    padding: 0;
+    min-height: 76.2vh;                   /* largo */
+    max-height: 76.2vh;
+    font-family: Arial, sans-serif;
+    background-color: #f9d185;
+
 }
 
 /* Contenedor del login */
 .login-container {
+
     background-color: #598cf367;
-    height: 100%;                   /* largo */
+    min-height: 50.5vh;                   /* largo */
     width: 250px;                   /* ancho */
-    margin: 100px auto;
-    padding: 10px;
+    margin: 100px ;
+
     border-radius: 5px;
     box-shadow: 0 0 20px #000000;
 }
 
 h2 {
     text-align: center;
-    margin-bottom: 20px;
     color: #fff;
 }
 
@@ -71,7 +88,9 @@ h2 {
 }
 
 /* Color del texto explicativo de las celdas */
-.usuario::placeholder,  .password::placeholder {
+.usuario::placeholder,
+.password::placeholder {
+
     color: #00000086;
     font-style: italic;
     font-size: 13px;
@@ -86,7 +105,6 @@ h2 {
     position: absolute;
     right: 30px;
     top: 5px;
-    text-transform: uppercase;
     cursor: pointer;
     background-color: #0057b300;    /* transparente */
     color: #0056b3;
@@ -134,7 +152,7 @@ h2 {
     padding: 10px;
     margin-bottom: 10px;
 
-    box-shadow: 0 0 10px #000000;
+    box-shadow: 5px 5px 15px #000000;
 }
 
 /* Al pasar por encima del boton. */
@@ -145,10 +163,11 @@ h2 {
 }
 
 .pie-login {
-    margin: 0%;
-    margin-bottom: 0vh;
+    margin: 0;
+    padding: 0;
+
     background: #598df3;               /* Color de fondo */
-    width: 99%;
+    min-height: 5vh;
 /*
     border-style: solid;
     border-color: #faf602;
@@ -158,7 +177,6 @@ h2 {
     font-size: 13px;                        /* Tamaño de la letra */
     text-align: center;
     vertical-align: middle;
-    padding: 0.5%;
 }
 
 /* Animacion de Zoom de inicio de pantalla */
