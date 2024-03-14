@@ -46,10 +46,9 @@ h2 {
     margin-left: 20%;
 }
 
-/* formato del ingreso de datos y el boton. */
+/* Formato del ingreso de datos. */
 .usuario,
-.password,
-.boton {
+.password {
     height: 5%;         /* Alto */
     width: 80%;
     margin: 0% 10% 0% 10%;
@@ -58,23 +57,17 @@ h2 {
     box-sizing: border-box;
     border: 3px solid;
     border-color: #598df3;
+    background-color: #ffffff;
 
     padding: 10px;
     margin-bottom: 10px;
-
 }
 
-.boton {
-    background-color: #598df3;
-    color: #fff;
+/* Paso el mouse por arriba de los campos. */
+.usuario:hover,
+.password:hover {
     cursor: pointer;
-    font-size: 20px;
-}
-
-/* Al pasar por encima del boton. */
-.boton:hover {
-    background-color: #0056b3;
-    color: #FFA500;
+    border-color: #FFA500;
 }
 
 /* Color del texto explicativo de las celdas */
@@ -123,6 +116,33 @@ h2 {
 }
 */
 
+/* Formato del boton. */
+.boton {
+    height: 5%;         /* Alto */
+    width: 80%;
+    margin: 0% 10% 0% 10%;
+
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 3px solid;
+
+    background-color: #598df3;
+    color: #fff;
+    font-size: 20px;
+
+    padding: 10px;
+    margin-bottom: 10px;
+
+    box-shadow: 0 0 10px #000000;
+}
+
+/* Al pasar por encima del boton. */
+.boton:hover {
+    cursor: pointer;
+    background-color: #0056b3;
+    color: #FFA500;
+}
+
 .pie-login {
     margin: 0%;
     margin-bottom: 0vh;
@@ -134,11 +154,11 @@ h2 {
 */
     /* TEXTO */
     color: #ffffff;                       /* Color de la letra */
-    font-size: 12px;                        /* Tamaño de la letra */
-/*    text-align: center;*/
+    font-size: 13px;                        /* Tamaño de la letra */
+    text-align: center;
+    vertical-align: middle;
     padding: 0.5%;
 }
-
 
 /* Animacion de Zoom de inicio de pantalla */
 .animate {
