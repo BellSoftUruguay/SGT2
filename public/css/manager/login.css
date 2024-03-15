@@ -38,13 +38,14 @@ body {
 
 /* Contenedor del login */
 .login-container {
-    background-color: #598cf367;
+    background-color: #598cf3a1;
     min-height: 60vh;                   /* largo */
     width: 35vh;                   /* ancho */
     margin-left: 40vw;              /*margen izquierdo del contenedor */
 
     border-radius: 1.5vh;
-    box-shadow:  1vw 2vh #2c2b2b14;
+/*    box-shadow:  1vw 2vh #2c2b2b14;   */
+    box-shadow: 5px 5px #9999996c;
 
 }
 
@@ -101,8 +102,8 @@ h2 {
     right: 30px;
     top: 5px;
     cursor: pointer;
-    background-color: #0057b300;    /* transparente */
-    color: #0056b3;
+    background-color: #ffa60044;
+    color: #FFA500;
 }
 
 /* Rota el icono del candado */
@@ -136,7 +137,8 @@ h2 {
     padding: 10px;
     margin-bottom: 10px;
 
-    box-shadow: 5px 5px #2c2b2b3b;
+/*    box-shadow: 5px 5px #2c2b2b3b; */
+    box-shadow: 4px 4px #999;
 
 }
 
@@ -145,6 +147,21 @@ h2 {
     cursor: pointer;
     background-color: #0056b3;
     color: #FFA500;
+}
+
+/* Presiono el boton */
+.boton:active {
+    background-color: #598df3;      /* Color de fondo del boton */
+    color: #ffffff;                 /* Color del texto */
+    box-shadow: 1px 1px #666;
+    transform: translateY(4%);        /* Movimiento del boton */
+  }
+
+  /* Boton gana el foco */
+.boton:focus {
+    background-color: #598df3;      /* Color de fondo del boton */
+    color: #ffffff;                 /* Color del texto */
+    border-color: #666;             /* Color del borde del boton */
 }
 
 .btnIngresar {
