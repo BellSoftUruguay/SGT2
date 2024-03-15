@@ -2,13 +2,13 @@
 body {
     margin: 0;
     padding: 0;
-
 }
 
-/* TAMAÑO CAJON TITULO*/
+/*** CABEZAL DE PAGINA ***/
 .titulo-login {
     margin: 0;
-    padding: 0;
+    padding-bottom: 1vh;
+
     min-height: 8vh;
     max-height: 8vh;
     background: #598df3;               /* Color de fondo */
@@ -16,56 +16,54 @@ body {
     /* TEXTO */
     color: #ffffff;                       /* Color de la letra */
     font-size: 50px;                        /* Tamaño de la letra */
-    font-weight: 600;                       /* Grosor del texto */
+    font-weight: 800;
     text-align: center;
-
-}
-.modal-content{
-    margin: 0;
-    padding: 0;
-    min-height: 95vh;                   /* largo */
-    max-height: 95vh;
+/*
+    border-style: solid;
+    border-color: #27fa02;  */
 }
 
-.aaa {
+/*** CUERPO DE LA PAGINA ***/
+.cuerpo-login {
     margin: 0;
-    padding: 0;
-    min-height: 76.2vh;                   /* largo */
-    max-height: 76.2vh;
+    padding-top: 10vh;              /* separa el contenedor login */
+    min-height: 76vh;                   /* largo */
+
     font-family: Arial, sans-serif;
     background-color: #f9d185;
-
+/*
+    border-style: solid;
+    border-color: #fa0202;  */
 }
 
 /* Contenedor del login */
 .login-container {
-
     background-color: #598cf367;
-    min-height: 50.5vh;                   /* largo */
-    width: 250px;                   /* ancho */
-    margin: 100px ;
+    min-height: 60vh;                   /* largo */
+    width: 35vh;                   /* ancho */
+    margin-left: 40vw;              /*margen izquierdo del contenedor */
 
-    border-radius: 5px;
-    box-shadow: 0 0 20px #000000;
+    border-radius: 1.5vh;
+    box-shadow:  1vw 2vh #2c2b2b14;
+
 }
 
+/* Titulo del contenedor login */
 h2 {
+    padding-top: 2vh;
     text-align: center;
+    margin-bottom: 20px;
     color: #fff;
 }
 
-/* Imagen */
+/* Imagen Login */
 .login-imagen {
-/*    margin: 1%;
-    padding-left: 43%;
-    width: 15%;*/
     width: 50%;
     margin-left: 20%;
 }
 
 /* Formato del ingreso de datos. */
-.usuario,
-.password {
+.usuario, .password {
     height: 5%;         /* Alto */
     width: 80%;
     margin: 0% 10% 0% 10%;
@@ -80,20 +78,17 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* Paso el mouse por arriba de los campos. */
-.usuario:hover,
-.password:hover {
-    cursor: pointer;
-    border-color: #FFA500;
-}
-
 /* Color del texto explicativo de las celdas */
-.usuario::placeholder,
-.password::placeholder {
-
+.usuario::placeholder, .password::placeholder {
     color: #00000086;
     font-style: italic;
     font-size: 13px;
+}
+
+/* Paso el mouse por arriba de los campos. */
+.usuario:hover, .password:hover {
+    cursor: pointer;
+    border-color: #FFA500;
 }
 
 .ingresoDatos {
@@ -124,17 +119,6 @@ h2 {
     rotate: 360deg;
 }
 
-/*  Zoom a la imagen del login.
-.login-imagen {
-    width: 100px;
-    transition: width 2s;
-}
-
-.login-imagen:hover {
-    width: 150px;
-}
-*/
-
 /* Formato del boton. */
 .boton {
     height: 5%;         /* Alto */
@@ -152,7 +136,8 @@ h2 {
     padding: 10px;
     margin-bottom: 10px;
 
-    box-shadow: 5px 5px 15px #000000;
+    box-shadow: 5px 5px #2c2b2b3b;
+
 }
 
 /* Al pasar por encima del boton. */
@@ -162,24 +147,31 @@ h2 {
     color: #FFA500;
 }
 
+.btnIngresar {
+    padding-top: 5vh;
+}
+
+/*** PIE DE PAGINA ***/
 .pie-login {
     margin: 0;
     padding: 0;
 
     background: #598df3;               /* Color de fondo */
     min-height: 5vh;
-/*
-    border-style: solid;
-    border-color: #faf602;
-*/
+    max-height: 5vh;
+
     /* TEXTO */
     color: #ffffff;                       /* Color de la letra */
-    font-size: 13px;                        /* Tamaño de la letra */
+    font-size: 15px;                        /* Tamaño de la letra */
     text-align: center;
     vertical-align: middle;
 }
 
-/* Animacion de Zoom de inicio de pantalla */
+.imgUsr {
+    float: right;
+}
+
+/*** Animacion Zoom de LOGIN-CONTAINER ***/
 .animate {
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s

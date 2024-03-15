@@ -32,16 +32,19 @@
 </head>
 
 <body>
-    <!-- Ejecuta la animacion de pantalla (zoom) -->
-    <div class="modal-content ">   <!--animate-->
+    <div class="modal-content">
 
-        <div class="titulo-login"><a> Ingreso al S.G.T. </a></div>
+        <div class="titulo-login">
+            <a> Ingreso al S.G.T. </a>
+        </div>
 
-        <div class="aaa">
-            <div class="login-container">
+        <div class="cuerpo-login">
 
-                <h2>Iniciar Sesión</h2>
+            <div class="login-container animate">
 
+                <h2> Inicio Sesión </h2>
+
+                <!-- Imagen del login -->
                 <img src='../../imagenes/Usuarios.png' alt="Usuario" class="login-imagen" />
 
                 <!-- USUARIO -->
@@ -60,7 +63,7 @@
                 </div>
 
                 <!-- BOTON INGRESAR -->
-                <div>
+                <div class="btnIngresar">
                     <button type="submit" class="boton" onclick="Login()"> Ingresar </button>
                 </div>
             </div>
@@ -68,12 +71,8 @@
 
         <!-- Pie de ventana -->
         <div class="pie-login">
-            <span>
-
-                <!--                    <img src="../../imagenes/BellSoft.png" width="15" class="logo">     -->
-                Bellsoft Uruguay ® | Montevideo - Uruguay
-                <img src="../../imagenes/Usuarios.png" width="20" class="imgUsr">
-            </span>
+            <a> Bellsoft Uruguay ® | Montevideo - Uruguay </a>
+            <a><img src="../../imagenes/Usuarios.png" width="20" class="imgUsr"> </a>
         </div>
     </div>
 
