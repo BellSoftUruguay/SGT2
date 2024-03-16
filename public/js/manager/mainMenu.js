@@ -23,6 +23,7 @@ function crearMenu() {
     var menu = document.getElementById('menu');
 
     for (var i = 0; i < menuItems.length; i++) {
+        
         var li = document.createElement('li');
 
         if (menuItems[i].subMenu.length > 0) {
