@@ -1,6 +1,6 @@
 /******************** FONDO DE LA VENTANA ********************/
 .bodyAbout{
-    background-image: url("../imagenes/Fondos/Fondo2.jpg");
+    background-image: url("../../imagenes/Fondos/Fondo2.jpg");
     overflow: hidden;
 
     /* Fijar la imagen de fondo este vertical y horizontalmente y centrado */

@@ -8,22 +8,22 @@ function crearMenu() {
         campo 2 = texto desplegado en el menu
         campo 3 = URL de la opcion del menu. Si no tiene URL se agrega el array del submenu.
     */
-    menuItems = [ {descripcion: "Tickets", url: "tickets", subMenu: [] },
+    menuItems = [ {descripcion: "Tickets", url: "tickets.html", subMenu: [] },
                   {descripcion: "Informes", url: "#", subMenu: [{descripcion: "Informe 1", url: "Informe1"},
                                                                 {descripcion: "Informe 2", url: "Informe2"},
                                                                 {descripcion: "Informe 3", url: "Informe3"} ] },
-                  {descripcion: "Mantenimientos", url: "#", subMenu: [{descripcion: "Estados", url: "estados"},
-                                                                      {descripcion: "Prioridades", url: "prioridades.html"},
+                  {descripcion: "Mantenimientos", url: "#", subMenu: [{descripcion: "Estados", url: "file:///C:/xampp/htdocs/SGT2/public/pages/manager/mantEstados.html"},
+                                                                      {descripcion: "Prioridades", url: "file:///C:/xampp/htdocs/SGT2/public/pages/manager/mantPrioridades.html"},
                                                                       {descripcion: "Sectores", url: "sectores"},
                                                                       {descripcion: "Tipos de ticket", url: "tiposTkt"},
                                                                       {descripcion: "Usuarios", url: "usuarios"} ] },
-                  {descripcion: "Acerca de...", url: "about", subMenu: [] }
+                  {descripcion: "Acerca de...", url: "about.html", subMenu: [] }
     ]; // Corchete de inicio.
 
     var menu = document.getElementById('menu');
 
     for (var i = 0; i < menuItems.length; i++) {
-        
+
         var li = document.createElement('li');
 
         if (menuItems[i].subMenu.length > 0) {

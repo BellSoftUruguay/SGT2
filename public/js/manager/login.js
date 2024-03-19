@@ -15,16 +15,14 @@ async function Login() {
         /*  Si al invocar a la funcion de la Api, se retorna un valor, se analiza cual es el resultado */
         if (data2.resultado == 200) {
 
-        //    alert(data2.objUsuario.usuario);
-
             /* Login existoso*/
             localStorage.setItem('usuario', data2.objUsuario.usuario);
 
             /* Segun la categoria del usuario, abre un menu u otro. */
             if (data2.objUsuario.categoriaUsuario == 9) {
-                window.open("C:/xampp/htdocs/SGT2/public/pages/manager/mainMenu.html", "_self");          // Manager - supervisor
+               window.open("file:///C:/xampp/htdocs/SGT2/public/pages/manager/mainMenu.html", "_self");          // Manager - supervisor
             } else {
-                window.open("C:/xampp/htdocs/SGT2/public/pages/manager/mainMenu.html", "_self");         // Usuario final.
+               window.open("file:///C:/xampp/htdocs/SGT2/public/pages/manager/mainMenu.html", "_self");         // Usuario final.
             }
 
         } else {
