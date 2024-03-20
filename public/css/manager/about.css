@@ -12,28 +12,28 @@
     /* La imagen ocupa el 100% y se reescala */
     background-size: cover;
 
-    width: 100%;
-    height: 90vh;
+    width: 100vw;
+    height: 88vh;
  }
 
 /******************** TEXTO ABOUT ********************/
 .about {
     /* Distancia del titulo al texto
      Arriba, Derecha, Abajo, Izquierda */
-    padding: 0% 25% 5% 25%;
+    padding: 0vh 20vw 0vh 25vw;
 
     /* Color de la letra */
     color: #ffffff;
 
     /* Tamaño de la letra */
-    font-size: 150%;
-    margin-top: 10%;
-    margin-left: 0%;
+    font-size: 20px;
+    margin-top: 10vh;
+    margin-left: 0;
 }
 
 .img-Nocopiar {
-    width: 20%;
-    margin-left: 35% ;
+    width: 20vw;
+    margin-left: 85vh;
+    margin-top: 10vh;
     border-radius: 5%;
 }
-
