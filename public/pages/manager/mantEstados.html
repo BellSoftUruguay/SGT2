@@ -1,48 +1,58 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="../../css/manager/estados.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <body>
-        <div class="estado-titulo"><span>Mantenimiento de estados</span></div>
+    <!-- Titulo de la pestaña -->
+    <title> ESTADOS </title>
 
-        <div class="estado-container">
+    <!-- Icono en la pestaña -->
+    <link rel="shortcut icon" type="image/x-icon" href="../../imagenes/Estados.png" />
 
-            <form id="estado-form">
-                <div class="TablaEstado">
-                    <div class="DatosEstado">
+    <link rel="stylesheet" type="text/css" href="../../css/manager/estados.css">
+</head>
 
-                        <!-- Datos recuperados de la DB -->
-                        <table class="TablaDatosEstado" border="1">
+<body>
+    <div class="estado-titulo"><span>Mantenimiento de estados</span></div>
 
-                            <!-- Cabezal de las columnas -->
-                            <thead id="thead-Estados">
-                                <tr>
-                                    <th>Estados</th>
-                                </tr>
-                            </thead>
+    <div class="estado-container">
 
-                            <!-- Detalle de la columna -->
-                            <tbody id="columna">
-                                <tr v-for="(registro, index) in this.listaEstados" :key="index" @click="selectRow(registro.id, registro.estado)">
-                                    <td class="registro_estado">{{ registro.estado }}</td>
-                                </tr>
-                            </tbody>
-                        </table> <!-- TablaDatosEstado -->
-                    </div> <!-- DatosEstado -->
+        <form id="estado-form">
+            <div class="TablaEstado">
+                <div class="DatosEstado">
 
-                    <!-- Estado -->
-                    <div class="CampoEstado">
-                        <input id="inputEstado" class="Estado" type="text" placeholder="Ingrese el Estado..." required v-model="form.campoEstado" title="Descripción del estado." >
-                    </div>
-                </div> <!-- TablaEstado -->
+                    <!-- Datos recuperados de la DB -->
+                    <table class="TablaDatosEstado" border="1">
 
-            </form>
-        </div>
-        <script src="../js/manager/estados.js"></script>
-    </body>
+                        <!-- Cabezal de las columnas -->
+                        <thead id="thead-Estados">
+                            <tr>
+                                <th>Estados</th>
+                            </tr>
+                        </thead>
+
+                        <!-- Detalle de la columna -->
+                        <tbody id="columna">
+                            <tr v-for="(registro, index) in this.listaEstados" :key="index"
+                                @click="selectRow(registro.id, registro.estado)">
+                                <td class="registro_estado">{{ registro.estado }}</td>
+                            </tr>
+                        </tbody>
+                    </table> <!-- TablaDatosEstado -->
+                </div> <!-- DatosEstado -->
+
+                <!-- Estado -->
+                <div class="CampoEstado">
+                    <input id="inputEstado" class="Estado" type="text" placeholder="Ingrese el Estado..." required
+                        v-model="form.campoEstado" title="Descripción del estado.">
+                </div>
+            </div> <!-- TablaEstado -->
+
+        </form>
+    </div>
+    <script src="../js/manager/estados.js"></script>
+</body>
 
 </html>

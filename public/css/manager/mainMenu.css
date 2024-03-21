@@ -72,7 +72,7 @@ a.dropdown:after {
 
 /*** PIE DE PAGINA ***/
 .pie-login {
-    margin: 0;
+    margin-top: 88vh;
     padding: 0;
 
     background: #598df3;               /* Color de fondo */
@@ -83,14 +83,10 @@ a.dropdown:after {
     color: #ffffff;                       /* Color de la letra */
     font-size: 15px;                        /* Tamaño de la letra */
     text-align: center;
-    vertical-align: middle;
-
-    /* Centra horizontal el texto */
-    justify-content: center;
 
     /* Centra vertical el texto */
     align-items: center;
-    vertical-align: middle;
+/*    vertical-align: middle;*/
 
     /* TEXTO */
     font-family: Comfortaa;

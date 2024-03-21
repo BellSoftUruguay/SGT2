@@ -1,52 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="../../css/manager/prioridades.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <body>
-        <div class="prioridades-titulo"><span>Mantenimiento de Prioridades</span></div>
+    <!-- Titulo de la pestaña -->
+    <title> PRIORIDADES </title>
 
-        <div class="prioridades-container">
+    <!-- Icono en la pestaña -->
+    <link rel="shortcut icon" type="image/x-icon" href="../../imagenes/Prioridades.png" />
 
-<!--            <h2>Iniciar Sesión</h2> -->
+    <link rel="stylesheet" type="text/css" href="../../css/manager/prioridades.css">
+</head>
 
-<!--            <img src='../imagenes/Usuarios.png' alt="Usuario" class="imagen">   -->
+<body>
+    <div class="prioridades-titulo"><span>Mantenimiento de Prioridades</span></div>
 
-            <form id="prioridades-form">
-                <div class="TablaPrioridades">
-                    <div class="DatosPrioridades">
+    <div class="prioridades-container">
 
-                        <!-- Datos recuperados de la DB -->
-                        <table class="TablaDatosPrioridades" border="1">
+        <!--            <h2>Iniciar Sesión</h2> -->
 
-                            <!-- Cabezal de las columnas -->
-                            <thead id="thead-Prioridades">
-                                <tr>
-                                    <th>Prioridades</th>
-                                </tr>
-                            </thead>
+        <!--            <img src='../imagenes/Usuarios.png' alt="Usuario" class="imagen">   -->
 
-                            <!-- Detalle de la columna -->
-                            <tbody id="columna">
-                                <tr v-for="(registro, index) in this.listaPrioridades" :key="index" @click="selectRow(registro.id, registro.prioridades)">
-                                    <td class="registro_prioridades">{{ registro.prioridades }}</td>
-                                </tr>
-                            </tbody>
-                        </table> <!-- TablaDatosPrioridades -->
-                    </div> <!-- DatosPrioridades -->
+        <form id="prioridades-form">
+            <div class="TablaPrioridades">
+                <div class="DatosPrioridades">
 
-                    <!-- Prioridades -->
-                    <div class="CampoPrioridades">
-                        <input id="inputPrioridades" class="Prioridades" type="text" placeholder="Ingrese la Prioridades..." required v-model="form.campoPrioridades" title="Descripción de la prioridades." >
-                    </div>
-                </div> <!-- TablaPrioridades -->
+                    <!-- Datos recuperados de la DB -->
+                    <table class="TablaDatosPrioridades" border="1">
 
-            </form>
-        </div>
-        <script src="../js/manager/prioridades.js"></script>
-    </body>
+                        <!-- Cabezal de las columnas -->
+                        <thead id="thead-Prioridades">
+                            <tr>
+                                <th>Prioridades</th>
+                            </tr>
+                        </thead>
+
+                        <!-- Detalle de la columna -->
+                        <tbody id="columna">
+                            <tr v-for="(registro, index) in this.listaPrioridades" :key="index"
+                                @click="selectRow(registro.id, registro.prioridades)">
+                                <td class="registro_prioridades">{{ registro.prioridades }}</td>
+                            </tr>
+                        </tbody>
+                    </table> <!-- TablaDatosPrioridades -->
+                </div> <!-- DatosPrioridades -->
+
+                <!-- Prioridades -->
+                <div class="CampoPrioridades">
+                    <input id="inputPrioridades" class="Prioridades" type="text" placeholder="Ingrese la Prioridades..."
+                        required v-model="form.campoPrioridades" title="Descripción de la prioridades.">
+                </div>
+            </div> <!-- TablaPrioridades -->
+
+        </form>
+    </div>
+    <script src="../js/manager/prioridades.js"></script>
+</body>
 
 </html>
