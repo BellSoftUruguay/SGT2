@@ -1,5 +1,5 @@
 /******************** FONDO DE LA VENTANA ********************/
-.bodyAbout{
+.about-container{
     background-image: url("../../imagenes/Fondos/Fondo2.jpg");
     overflow: hidden;
 
@@ -12,7 +12,7 @@
     /* La imagen ocupa el 100% y se reescala */
     background-size: cover;
 
-    width: 100vw;
+    width: 99vw;
     height: 88.8vh;
  }
 
