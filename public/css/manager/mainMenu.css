@@ -70,9 +70,25 @@ a.dropdown:after {
     display: block;
 }
 
+/*** CUERPO DEL MENU ***/
+.cuerpo-menu {
+
+    /* Fijar la imagen de fondo este vertical y horizontalmente y centrado */
+    background-position: center ;
+
+    /* Esta imagen no debe de repetirse */
+    background-repeat: no-repeat;
+
+    /* La imagen ocupa el 100% y se reescala */
+    background-size: cover;
+
+    width: 100vw;
+    height: 88.4vh;
+}
+
 /*** PIE DE PAGINA ***/
 .pie-login {
-    margin-top: 88vh;
+    margin-top:0vh;           /* 88 */
     padding: 0;
 
     background: #598df3;               /* Color de fondo */

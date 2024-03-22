@@ -1,5 +1,5 @@
 /******************** FONDO DE LA VENTANA ********************/
-.about-container{
+.about-container {
     background-image: url("../../imagenes/Fondos/Fondo2.jpg");
     overflow: hidden;
 
@@ -12,15 +12,15 @@
     /* La imagen ocupa el 100% y se reescala */
     background-size: cover;
 
-    width: 99vw;
-    height: 88.8vh;
+    width: 100vw;
+    height: 95vh;
  }
 
 /******************** TEXTO ABOUT ********************/
 .about {
     /* Distancia del titulo al texto
      Arriba, Derecha, Abajo, Izquierda */
-    padding: 0vh 20vw 0vh 25vw;
+    padding: 0vh 20vw 0vh 20vw;
 
     /* Color de la letra */
     color: #ffffff;
@@ -32,8 +32,9 @@
 }
 
 .img-Nocopiar {
-    width: 20vw;
+    width: 15vw;
     margin-left: 85vh;
     margin-top: 10vh;
     border-radius: 5%;
+    padding: 0;
 }
