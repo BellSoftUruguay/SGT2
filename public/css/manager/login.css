@@ -44,7 +44,7 @@ body {
     margin-left: 40vw;              /*margen izquierdo del contenedor */
 
     border-radius: 1.5vh;
-    box-shadow: 5px 5px #9999996c;      /* color de la sombra */
+    box-shadow: 5px 5px #00000080;      /* color de la sombra */
 }
 
 /* Titulo del contenedor login */

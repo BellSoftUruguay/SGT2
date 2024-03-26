@@ -21,9 +21,10 @@
 .img-Nocopiar {
     width: 15vw;
     margin-left: 85vh;
-    margin-top: 10vh;
+    margin-top: 15vh;
     border-radius: 5%;
     padding: 0;
+    box-shadow: 5px 5px #00000080;      /* color de la sombra */
 }
 
 
