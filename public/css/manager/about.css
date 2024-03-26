@@ -4,7 +4,7 @@
     overflow: hidden;
 
     /* Fijar la imagen de fondo este vertical y horizontalmente y centrado */
-    background-position: center ;
+    background-position: center;
 
     /* Esta imagen no debe de repetirse */
     background-repeat: no-repeat;
@@ -12,14 +12,29 @@
     /* La imagen ocupa el 100% y se reescala */
     background-size: cover;
 
+    position: absolute;
     width: 100vw;
     height: 95vh;
- }
+}
 
 /******************** TEXTO ABOUT ********************/
+
+.img-Nocopiar {
+    width: 15vw;
+    margin-left: 50vh;
+    margin-top: 15vh;
+    border-radius: 5%;
+    padding: 0;
+    box-shadow: 5px 5px #00000080;
+    /* color de la sombra */
+}
+
+
+/**********************************************************************************************************/
 .about {
+
     /* Distancia del titulo al texto
-     Arriba, Derecha, Abajo, Izquierda */
+    Arriba, Derecha, Abajo, Izquierda */
     padding: 0vh 20vw 0vh 20vw;
 
     /* Color de la letra */
@@ -29,15 +44,122 @@
     font-size: 20px;
     margin-top: 10vh;
     margin-left: 0;
+
 }
 
-.img-Nocopiar {
+h1 {
+    color: #fff;
+    position: relative;
+}
+
+.area {
+    background: #4e54c8;
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+    width: 100%;
+    height: 95vh;
+}
+
+/* Cubo inicial */
+.cubo {
+    position: absolute;
+    top: 90vh;
+    left: 45vw;
+    width: 5vw;
+    height: 11vh;
+    overflow: hidden;
+    display: block;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 30s linear infinite;
+}
+/*
+.cubo:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.cubo:nth-child(2){
+    left: 10vw;
+    width: 20vw;
+    height: 20vh;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.cubo:nth-child(3){
+    left: 75vw;
+    width: 20vw;
+    height: 20vh;
+    animation-delay: 4s;
+}
+
+.cubo:nth-child(4){
+    left: 40vw;
+    width: 60vw;
+    height: 60vh;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.cubo:nth-child(5){
+    left: 65vw;
+    width: 20vw;
+    height: 20vh;
+    animation-delay: 0s;
+}
+
+.cubo:nth-child(6){
+    left: 75vw;
+    width: 110vw;
+    height: 110vh;
+    animation-delay: 3s;
+}
+
+.cubo:nth-child(7){
+    left: 35vw;
+    width: 150vw;
+    height: 150vh;
+    animation-delay: 7s;
+}
+
+.cubo:nth-child(8){
+    left: 50vw;
+    width: 25vw;
+    height: 25vh;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.cubo:nth-child(9){
+    left: 20vw;
     width: 15vw;
-    margin-left: 85vh;
-    margin-top: 15vh;
-    border-radius: 5%;
-    padding: 0;
-    box-shadow: 5px 5px #00000080;      /* color de la sombra */
+    height: 15vh;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.cubo:nth-child(10){
+    left: 85vw;
+    width: 150vw;
+    height: 150vh;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+*/
+@keyframes animate {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
 }
 
 /* Cubo inicial */
