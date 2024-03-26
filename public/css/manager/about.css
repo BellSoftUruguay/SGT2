@@ -39,3 +39,106 @@
     padding: 0;
     box-shadow: 5px 5px #00000080;      /* color de la sombra */
 }
+
+/* Cubo inicial */
+.cubo {
+    position: absolute;
+    top: 85vh;
+    left: 45vh;
+    width: 5vw;
+    height: 11vh;
+    overflow: hidden;
+    display: block;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 30s linear infinite;
+}
+/*
+.cubo:nth-child(1){
+    left: 25vw;
+    width: 10vw;
+    height: 22vh;
+    animation-delay: 0s;
+}
+
+.cubo:nth-child(2){
+    left: 10vw;
+    width: 20vw;
+    height: 44vh;
+    animation-delay: 1s;
+    animation-duration: 12s;
+}
+
+.cubo:nth-child(3){
+    left: 75vw;
+    width: 10vw;
+    height: 20vh;
+    animation-delay: 4s;
+}
+
+.cubo:nth-child(4){
+    left: 40vw;
+    width: 20vw;
+    height: 44vh;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.cubo:nth-child(5){
+    left: 65vw;
+    width: 20vw;
+    height: 20vh;
+    animation-delay: 0s;
+}
+
+.cubo:nth-child(6){
+    left: 75vw;
+    width: 110vw;
+    height: 110vh;
+    animation-delay: 3s;
+}
+
+.cubo:nth-child(7){
+    left: 35vw;
+    width: 150vw;
+    height: 150vh;
+    animation-delay: 7s;
+}
+
+.cubo:nth-child(8){
+    left: 50vw;
+    width: 25vw;
+    height: 25vh;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.cubo:nth-child(9){
+    left: 20vw;
+    width: 15vw;
+    height: 15vh;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.cubo:nth-child(10){
+    left: 85vw;
+    width: 150vw;
+    height: 150vh;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+*/
+@keyframes animate {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    90% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
