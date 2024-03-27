@@ -42,59 +42,75 @@
 /* Cubo inicial */
 .cubo {
     position: absolute;
-    top: 90vh;
+    top: 80%;       /* inicio */
     left: 45vw;
-    width: 5vw;
-    height: 11vh;
+    width: 2.5vw;
+    height: 5vh;
     overflow: hidden;
     display: block;
-
-    animation: animate 30s linear infinite;
+    list-style: none;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 1s linear infinite;
 }
 
 .cubo:nth-child(1){
-    left: 25%;
-    width: 80px;
-    height: 80px;
-    animation-delay: 0s;
+    left: 25vw;
+    width: 5vw;
+    height: 10vh;
+    animation-delay: .0s;
+    animation-duration: 10s;
 }
-/*
+
 .cubo:nth-child(2){
     left: 10vw;
-    width: 20vw;
+    width: 10vw;
     height: 20vh;
-    animation-delay: 2s;
+    animation-delay: 1s;
     animation-duration: 12s;
 }
 
 .cubo:nth-child(3){
-    left: 75vw;
-    width: 20vw;
-    height: 20vh;
-    animation-delay: 4s;
+    left: 45vw;
+    width: 5vw;
+    height: 10vh;
+    animation-delay: .5s;
+    animation-duration: 7s;
 }
 
 .cubo:nth-child(4){
-    left: 40vw;
-    width: 60vw;
-    height: 60vh;
-    animation-delay: 0s;
-    animation-duration: 18s;
+    left: 30vw;
+    width: 10vw;
+    height: 20vh;
+    animation-delay: 1s;
+    animation-duration: 15s;
 }
 
 .cubo:nth-child(5){
     left: 65vw;
-    width: 20vw;
-    height: 20vh;
-    animation-delay: 0s;
+    width: 5vw;
+    height: 10vh;
+    animation-delay: .5s;
+    animation-duration: 8s;
 }
 
 .cubo:nth-child(6){
-    left: 75vw;
-    width: 110vw;
-    height: 110vh;
-    animation-delay: 3s;
+    left: 50vw;
+    width: 10vw;
+    height: 20vh;
+    animation-delay: 1s;
+    animation-duration: 13s;
 }
+
+.cubo:nth-child(7){
+    left: 35%;
+    width: 30vw;
+    height: 15vh;
+    animation-delay: 0s;
+    animation-duration: 8s;
+}
+
+/*
+
 
 .cubo:nth-child(7){
     left: 35vw;
@@ -129,13 +145,13 @@
 */
 @keyframes animate {
 
-    0% {
+    60% {
         transform: translateY(0) rotate(0deg);
         opacity: 1;
         border-radius: 0;
     }
 
-    100% {
+    80% {
         transform: translateY(-1000px) rotate(720deg);
         opacity: 0;
         border-radius: 50%;
