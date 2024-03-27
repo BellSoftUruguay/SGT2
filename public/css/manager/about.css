@@ -42,27 +42,27 @@
 /* Cubo inicial */
 .cubo {
     position: absolute;
-    top: 80%;       /* inicio */
-    left: 45vw;
+    top: 95%;       /* inicio */
+/*    left: 45vw;
     width: 2.5vw;
-    height: 5vh;
+    height: 5vh;    */
     overflow: hidden;
     display: block;
-    list-style: none;
-    background: rgba(255, 255, 255, 0.2);
-    animation: animate 1s linear infinite;
+    border-radius: 70%;
+    background: rgba(128, 174, 245, 0.2);
+    animation: animate 20s linear infinite;
 }
 
 .cubo:nth-child(1){
-    left: 25vw;
+    left: 15vw;
     width: 5vw;
     height: 10vh;
-    animation-delay: .0s;
-    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-duration: 15s;
 }
 
 .cubo:nth-child(2){
-    left: 10vw;
+    left: 90vw;
     width: 10vw;
     height: 20vh;
     animation-delay: 1s;
@@ -70,9 +70,9 @@
 }
 
 .cubo:nth-child(3){
-    left: 45vw;
-    width: 5vw;
-    height: 10vh;
+    left: 30vw;
+    width: 15vw;
+    height: 29vh;
     animation-delay: .5s;
     animation-duration: 7s;
 }
@@ -109,49 +109,15 @@
     animation-duration: 8s;
 }
 
-/*
-
-
-.cubo:nth-child(7){
-    left: 35vw;
-    width: 150vw;
-    height: 150vh;
-    animation-delay: 7s;
-}
-
-.cubo:nth-child(8){
-    left: 50vw;
-    width: 25vw;
-    height: 25vh;
-    animation-delay: 15s;
-    animation-duration: 45s;
-}
-
-.cubo:nth-child(9){
-    left: 20vw;
-    width: 15vw;
-    height: 15vh;
-    animation-delay: 2s;
-    animation-duration: 35s;
-}
-
-.cubo:nth-child(10){
-    left: 85vw;
-    width: 150vw;
-    height: 150vh;
-    animation-delay: 0s;
-    animation-duration: 11s;
-}
-*/
 @keyframes animate {
 
-    60% {
+    0% {
         transform: translateY(0) rotate(0deg);
         opacity: 1;
-        border-radius: 0;
+        border-radius: 70%;
     }
 
-    80% {
+    100% {
         transform: translateY(-1000px) rotate(720deg);
         opacity: 0;
         border-radius: 50%;
