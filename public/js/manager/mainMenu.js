@@ -37,10 +37,12 @@ function crearMenu() {
             var dropdownContent = document.createElement('div');
             dropdownContent.className = 'dropdown-content';
 
+            /* Cargo todas las opciones del submenu */
             for (var j = 0; j < menuItems[i].subMenu.length; j++) {
+
                 var a = document.createElement('a');
-                a.href = menuItems[i].subMenu[j].url;
                 a.textContent = menuItems[i].subMenu[j].descripcion;
+                a.href = menuItems[i].subMenu[j].url;
                 dropdownContent.appendChild(a);
             }
             li.appendChild(dropdownContent);
@@ -48,8 +50,8 @@ function crearMenu() {
         } else {
 
             var a = document.createElement('a');
-            a.href = menuItems[i].url;
             a.textContent = menuItems[i].descripcion;
+            a.href = menuItems[i].url;
             li.appendChild(a);
         }
         menu.appendChild(li);
