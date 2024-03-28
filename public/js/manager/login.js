@@ -27,8 +27,10 @@ async function Login() {
 
         } else {
             /* Si la funcion no retorna resultado = 200, se muestra el mensaje que retorna */
-            /* error1.value = response.data.mensaje */
-
+            if (data2.resultado == 500){
+                alert('Error en la conexión con la base de datos.');
+                return;
+            }
             alert('El usuario o el password son incorrectos !!!');
             //mensajes.informacion('El usuario o el password son incorrectos !!!');
         }

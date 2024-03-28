@@ -102,11 +102,11 @@
 }
 
 .cubo:nth-child(7){
-    left: 35%;
-    width: 30vw;
-    height: 15vh;
+    left: 75vw;
+    width: 15vw;
+    height: 30vh;
     animation-delay: 0s;
-    animation-duration: 8s;
+    animation-duration: 10s;
 }
 
 @keyframes animate {

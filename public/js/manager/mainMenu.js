@@ -57,3 +57,8 @@ function crearMenu() {
         menu.appendChild(li);
     }
 };
+
+function usuarioActivo() {
+
+    return data2.objUsuario.usuario;
+}
